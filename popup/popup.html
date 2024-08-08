@@ -1,17 +1,55 @@
+<!-- Code Written By Anirudh -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Chat Bot</title>
-        <link rel="stylesheet" href="bulma.min.css">
+    
+    <!-- Import Bulma CSS Framework from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <!-- Link to custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Another link to Bulma (redundant if already linked above, could be removed) -->
+    <link rel="stylesheet" href="bulma.min.css">
 </head>
 <body>
-   <div class="container m-3">
-        <h1 class="title">Auto Chat Bot</h1>
-        <div class="button">
-            <button class="button is-primary is-outlined">Enable</button>
-        </div>
-   </div>
+    <!-- Main container with margin -->
+    <div class="container m-3">
+        <!-- Centered Title -->
+        <center><h1 class="title">Auto Chat Bot</h1></center>
+        
+        <!-- Form for application selection and tone input -->
+        <form action="/submit-form" method="post">
+            <!-- Label for the application selection dropdown -->
+            <label for="Application">Choose an Application from below:</label>
+            <!-- Dropdown for selecting an application -->
+            <select id="Application" name="Application">
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Linkedin">Linkedin</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Telegram">Telegram</option>
+            </select>
+            
+            <br><br> <!-- Space between the dropdown and the input field -->
+            
+            <!-- Input field for writing the tone -->
+            <div class="message-bar">
+                <input type="text" placeholder="Write your Tone..." id="queryInput">
+            </div>
+        </form>
+
+        <!-- Functional Button to trigger an action (e.g., sending a query) -->
+        <button id="queryButton" class="button is-black">Enable</button>
+        <!-- Div to display the result from the query -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Link to the JavaScript file handling button click and other events -->
+    <script src="popup.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+/* Code Written By Anirudh */
+
+/* Style for the h1 element */
+h1 {
+    margin-bottom: 40px; /* Adds space below the h1 element */
+}
+
+/* Set the width of the entire popup window */
+body {
+    width: 400px; /* Adjust the width of the popup as needed */
+}
+
+/* Style for content class */
+.content {
+    padding: 20px; /* Adds padding inside elements with the content class */
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font family */
+    margin: 30px; /* Adds margin around the body */
+}
+
+/* Style for select dropdown */
+select {
+    width: 100%; /* Full width for the dropdown */
+    padding: 8px; /* Padding inside the dropdown */
+    margin-bottom: 20px; /* Adds space below the dropdown */
+    font-size: 16px; /* Font size for the dropdown text */
+    background-color: #000000; /* Background color of the dropdown */
+    color: aqua; /* Text color of the dropdown */
+    border: 2px solid aqua; /* Border color and width */
+    border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+/* Additional general body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font family */
+    margin: 30; /* Margin around the body */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: stretch; /* Aligns content vertically */
+    height: 90vh; /* Sets the height to 90% of the viewport height */
+    background-color: hwb(0 0% 100%); /* Light gray background for contrast */
+}
+
+/* Style for the message input bar */
+.message-bar {
+    width: 100%; /* Full width for the message bar */
+    max-width: 600px; /* Maximum width of 600px */
+    display: flex; /* Flexbox layout */
+    margin-bottom: 20px; /* Adds space below the message bar */
+    align-items: center; /* Centers content vertically */
+}
+
+/* Style for the input text field */
+input[type="text"] {
+    width: 100%; /* Full width for the input field */
+    padding: 10px; /* Padding inside the input field */
+    border: 2px solid aqua; /* Border color and width */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    font-size: 16px; /* Font size for the input text */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    background-color: #000000; /* Background color of the input field */
+    color: aqua; /* Text color inside the input field */
+}
+
+/* Style for the input placeholder text */
+input[type="text"]::placeholder {
+    color: aqua; /* Placeholder text color */
+}
+
+/* Style for glowing effect */
+.glow {
+    box-shadow: 0 0 20px 2px rgba(0, 123, 255, 0.75); /* Adds a glow effect with a blue shadow */
+}
+
+/* Style for elements with the is-aqua class */
+.is-aqua {
+    background-color: aqua; /* Aqua background color */
+    color: black; /* Black text color */
+}
+
+/* Style for elements with the is-black class */
+.is-black {
+    background-color: black; /* Black background color */
+    color: aqua; /* Aqua text color */
+}
